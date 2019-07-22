@@ -7,7 +7,7 @@ use Faker\Generator as Faker;
 use Symfony\Component\Finder\Finder;
 use Illuminate\Contracts\Database\Eloquent\Factory as FactoryContract;
 
-class Factory implements ArrayAccess, FactoryContract
+class Factory implements FactoryContract, ArrayAccess
 {
     /**
      * The model definitions in the container.
